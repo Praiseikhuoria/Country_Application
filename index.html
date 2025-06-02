@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/toggler.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+
+
+    <title>Country API</title>
+</head>
+<body class="dark">
+
+    <nav id="mainNav" class="row">
+        <div id ="textLogo" class="col">
+            <p>Where in the world?</p>
+        </div>
+
+        <div id="themeSwitcher" class="col">
+            <div id="toggler" class="toggle-container">
+                <input type='checkbox' id='time' name="theme"/><label for='time'>Night</label>
+            </div>
+        </div>
+    </nav>
+
+    <header class="row sticky-top" id="pageHeader">
+        <div class="col-sm-6 col-md-12 col-xl-6" id="searchBar" aria-labelledby="pageHeader">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="search" aria-labelledby="searchBar" name="countrySearch" id="countrySearch" placeholder="Search for a country..." autofocus>
+        </div>
+
+            <div class="col-sm-6 col-md-12 col-xl-6" id="filterBar" aria-labelledby="filterBar">
+                <select id="continent" class="" name="continent" aria-label="select continent">
+                    <option value="" disabled selected>Filter by Region</option>
+                    <option value="all">All Countries</option>
+                    <option value="africa">Africa</option>
+                    <option value="america">America</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
+                </select>    
+        </div>
+
+    </header>  
+
+    <main id="mainContentArea">
+        <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal mainContentArea" aria-hidden="true">
+
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    
+                </div>
+            
+            </div>
+        </div>
+        
+
+        <div class="row" id="cardWrapper">   
+            
+        </div>
+    </main>
+
+    <script src="js/jquery3.5.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script defer="" src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+</html>
