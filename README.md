@@ -1,6 +1,8 @@
 # Countries_API
 A REST Countries API with color theme switcher
 
+![Praise](https://github.com/Praiseikhuoria/Country_Application/blob/10e266744e8d823a962459086940f968df62732d/img.jpeg)
+
 
 This project is one of the advanced challenges on the frontendmentor site. Using data from the REST Countries API, I created a page to display selected country information. A theme switcher was also incorporated into the project and localstorage is used to persist information about the theme state on the browser. 
 
